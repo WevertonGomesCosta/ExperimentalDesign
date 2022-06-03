@@ -284,7 +284,7 @@ $(document).ready(function () {
 <p>
 <button type="button" class="btn btn-default btn-workflowr btn-workflowr-report" data-toggle="collapse" data-target="#workflowr-report">
 <span class="glyphicon glyphicon-list" aria-hidden="true"></span>
-workflowr <span class="glyphicon glyphicon-ok text-success"
+workflowr <span class="glyphicon glyphicon-exclamation-sign text-danger"
 aria-hidden="true"></span>
 </button>
 </p>
@@ -295,8 +295,8 @@ aria-hidden="true"></span>
 </li>
 <li>
 <a data-toggle="tab" href="#checks"> Checks <span
-class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span>
-</a>
+class="glyphicon glyphicon-exclamation-sign text-danger"
+aria-hidden="true"></span> </a>
 </li>
 <li>
 <a data-toggle="tab" href="#versions">Past versions</a>
@@ -309,9 +309,9 @@ class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span>
 </p>
 <p>
 <strong>Checks:</strong> <span
-class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> 2
+class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> 1
 <span class="glyphicon glyphicon-exclamation-sign text-danger"
-aria-hidden="true"></span> 0
+aria-hidden="true"></span> 1
 </p>
 <p>
 <strong>Knit directory:</strong> <code>ExperimentalDesign/</code> <span
@@ -334,33 +334,36 @@ versions</em> tab lists the development history.
 <div class="panel panel-default">
 <div class="panel-heading">
 <p class="panel-title">
-<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongRMarkdownfilestronguptodate">
-<span class="glyphicon glyphicon-ok text-success"
-aria-hidden="true"></span> <strong>R Markdown file:</strong> up-to-date
-</a>
+<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongRMarkdownfilestronguncommittedchanges">
+<span class="glyphicon glyphicon-exclamation-sign text-danger"
+aria-hidden="true"></span> <strong>R Markdown file:</strong> uncommitted
+changes </a>
 </p>
 </div>
-<div id="strongRMarkdownfilestronguptodate"
+<div id="strongRMarkdownfilestronguncommittedchanges"
 class="panel-collapse collapse">
 <div class="panel-body">
-<p>Great! Since the R Markdown file has been committed to the Git
-repository, you know the exact version of the code that produced these
-results.</p>
+<p>The R Markdown file has unstaged changes. To know which version of
+the R Markdown file created these results, you’ll want to first commit
+it to the Git repo. If you’re still working on the analysis, you can
+ignore this warning. When you’re finished, you can run
+<code>wflow_publish</code> to commit the R Markdown file and build the
+HTML.</p>
 </div>
 </div>
 </div>
 <div class="panel panel-default">
 <div class="panel-heading">
 <p class="panel-title">
-<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongRepositoryversionstrongahrefhttpsgithubcomWevertonGomesCostaExperimentalDesigntreee7cc34662df67d4b7c137950af14c51e722a8d18targetblanke7cc346a">
+<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongRepositoryversionstrongahrefhttpsgithubcomWevertonGomesCostaExperimentalDesigntree33b83046c8c23a8163cbfbd816b454e3f7f574e8targetblank33b8304a">
 <span class="glyphicon glyphicon-ok text-success"
 aria-hidden="true"></span> <strong>Repository version:</strong>
-<a href="https://github.com/WevertonGomesCosta/ExperimentalDesign/tree/e7cc34662df67d4b7c137950af14c51e722a8d18" target="_blank">e7cc346</a>
+<a href="https://github.com/WevertonGomesCosta/ExperimentalDesign/tree/33b83046c8c23a8163cbfbd816b454e3f7f574e8" target="_blank">33b8304</a>
 </a>
 </p>
 </div>
 <div
-id="strongRepositoryversionstrongahrefhttpsgithubcomWevertonGomesCostaExperimentalDesigntreee7cc34662df67d4b7c137950af14c51e722a8d18targetblanke7cc346a"
+id="strongRepositoryversionstrongahrefhttpsgithubcomWevertonGomesCostaExperimentalDesigntree33b83046c8c23a8163cbfbd816b454e3f7f574e8targetblank33b8304a"
 class="panel-collapse collapse">
 <div class="panel-body">
 <p>
@@ -370,7 +373,7 @@ reproducibility.
 </p>
 <p>
 The results in this page were generated with repository version
-<a href="https://github.com/WevertonGomesCosta/ExperimentalDesign/tree/e7cc34662df67d4b7c137950af14c51e722a8d18" target="_blank">e7cc346</a>.
+<a href="https://github.com/WevertonGomesCosta/ExperimentalDesign/tree/33b83046c8c23a8163cbfbd816b454e3f7f574e8" target="_blank">33b8304</a>.
 See the <em>Past versions</em> tab to see a history of the changes made
 to the R Markdown and HTML files.
 </p>
@@ -386,6 +389,12 @@ were generated:
 <pre><code>
 Ignored files:
     Ignored:    .Rproj.user/
+
+Untracked files:
+    Untracked:  analysis/images/
+
+Unstaged changes:
+    Modified:   analysis/index.Rmd
 
 </code></pre>
 <p>
@@ -435,6 +444,23 @@ Message
 html
 </td>
 <td>
+<a href="https://rawcdn.githack.com/WevertonGomesCosta/ExperimentalDesign/6ca5a9615ddc853b9d28be1f37ce0d2d0f7364dd/docs/index.html" target="_blank">6ca5a96</a>
+</td>
+<td>
+WevertonGomesCosta
+</td>
+<td>
+2022-06-03
+</td>
+<td>
+Build site.
+</td>
+</tr>
+<tr>
+<td>
+html
+</td>
+<td>
 <a href="https://rawcdn.githack.com/WevertonGomesCosta/ExperimentalDesign/f3e6f1a3e109fd20c8a15612dd468a05eae2e9b9/docs/index.html" target="_blank">f3e6f1a</a>
 </td>
 <td>
@@ -471,7 +497,407 @@ Start workflowr project.
 </div>
 </div>
 </div>
-<p>Welcome to my research website.</p>
+<p>Experimental Design Workshop Bakare to Cassava Next Gen</p>
+<div id="introduction-to-basic-experimental-design-in-plant-breeding"
+class="section level1">
+<h1>Introduction to basic experimental design in plant breeding</h1>
+<div id="outline" class="section level2">
+<h2>Outline</h2>
+<ul>
+<li>Basic ideas</li>
+<li>Definition of basic concepts</li>
+<li>Principles of good experimental design</li>
+<li>Field experimental design</li>
+</ul>
+</div>
+<div id="basic-ideas" class="section level2">
+<h2>Basic ideas</h2>
+<ul>
+<li>What is the research question?</li>
+<li>What are the sources of variation?</li>
+<li>How many treatments are to be studied?</li>
+<li>What are the experimental units?</li>
+<li>How does the researcher assign the treatments to the available
+experimental units?</li>
+<li>How does the researcher observe the responses?</li>
+<li>Can the resulting design be analyzed or can the desired comparisons
+be made?</li>
+</ul>
+</div>
+<div id="definition-of-basic-terms" class="section level2">
+<h2>Definition of basic terms</h2>
+<ul>
+<li>Experiment - an investigation in which a researcher applies some
+treatments to experimental units and then observes its effect by
+measuring one or more response variables</li>
+<li>Treatment – a condition or set of conditions applied to experimental
+unit in an experiment whose effect is to be studied</li>
+<li>Variety</li>
+<li>Different dosage of fertilizer</li>
+</ul>
+</div>
+<div id="basic-terms-contd" class="section level2">
+<h2>Basic terms (cont’d)</h2>
+<ul>
+<li>Experimental Unit – the physical entity to which a treatment is
+randomly assigned and independently applied</li>
+<li>Field plot</li>
+<li>Pot in greenhouse</li>
+<li>Layout – the physical arrangement of experimental units in
+space</li>
+<li>Block - group of homogeneous experimental unit</li>
+<li>Sampling Unit – Part of experimental unit that is measured</li>
+<li>Response variable – a measurable characteristic of an experimental
+unit that assesses the effect of treatment</li>
+</ul>
+<p><img src="images/image1.png" /></p>
+<p><a
+href="https://www.researchgate.net/profile/Urs-Schmidhalter-2">Reference</a></p>
+<ul>
+<li>Explanatory variable - a variable that can be used to explain
+variation in a response variable</li>
+<li>Factor – is an explanatory variable under the control of the
+researcher</li>
+<li>Levels - are the different manifestation of a factor to be included
+in an experiment</li>
+<li>Fixed factor - A factor is fixed if the levels under consideration
+are the only ones of interest</li>
+<li>Random factor – A factor is random if the levels under consideration
+may be regarded as a sample from a larger population</li>
+<li>Nested factor – A factor B is considered to be nested within A if
+each level of B occurs with only one level of Factor A. Denoted as B(A)
+e.g., block(loc)</li>
+</ul>
+<p><img src="images/image2.PNG" /></p>
+<ul>
+<li><p>Crossed factor – Factor A and B are considered crossed if every
+levels of B occurs with every level of A. Denoted as A<em>B. e.g.,
+G</em>L.</p></li>
+<li><p>Experimental error – Variation among experimental units that are
+treated alike</p></li>
+</ul>
+<p><img src="images/image3.PNG" /></p>
+</div>
+</div>
+<div id="experimental-design-in-plant-breeding" class="section level1">
+<h1>Experimental Design in plant breeding</h1>
+<div id="what-is-experimental-design" class="section level2">
+<h2>What is experimental design?</h2>
+<ul>
+<li>Experimental Design – The study of strategies for efficient plans
+for the collection of data, which lead to proper estimates of parameters
+relevant to the researcher’s objective (Lentner and Bishop, 1993)</li>
+<li>Design structure – grouping of homogeneous plots into blocks</li>
+<li>Treatment structure - the set of treatments or treatment combination
+the researcher has selected to study and/or compare</li>
+<li>Experimental designs are divided into two categories:</li>
+<li>Complete block design (blocks are complete) - CRD, RCBD, LD,
+SPD</li>
+<li>Incomplete block design (blocks are incomplete) - Augmented design,
+lattice design</li>
+</ul>
+</div>
+<div id="guiding-principle-to-choose-an-experimental"
+class="section level2">
+<h2>Guiding principle to choose an experimental</h2>
+<p>design Choice of an appropriate experimental design depends - Which
+is simpler in terms of layout and analysis - Which design adequately
+control variability or uniformity of experimental units - Purpose of the
+study - The number of entries being evaluated - Availability of seeds or
+planting material for replication</p>
+</div>
+<div id="principle-of-experimental-design" class="section level2">
+<h2>Principle of experimental design</h2>
+<p>3 principles of ED are: Replication, blocking, and randomization</p>
+<p><img src="images/image4.PNG" /></p>
+<p>Replication – Repeating a treatment more than once in an experiment.
+The reasons for replication are: - Understand the variability in the
+experiment - Provide an estimate of experimental error - Estimate the
+difference between mean effects of different treatments - To improve the
+precision of the experiment by reducing standard error</p>
+</div>
+<div id="principle-of-experimental-design-contd" class="section level2">
+<h2>Principle of experimental design (cont’d)</h2>
+<p>Blocking – Process of partitioning experimental units into
+homogeneous groups such that - Intrablock plot variability minimized -
+Interbocks plot variation maximized Why blocking? - Removes extraneous
+variation from data - Serves as an error control strategy - Enhances
+precision in inferential data analysis</p>
+<p>“Block what you can and randomize what you cannot.” Box, Hunter and
+Hunter 1978</p>
+<p>Randomization – Assignment of treatments to experimental units so
+that all units have an equal chance of receiving a treatment Why
+randomization? - It helps to assure unbiased estimates of treatment
+means and experimental error - Statistical estimation and tests of
+hypotheses on effects are theoretically valid</p>
+</div>
+<div id="completely-randomized-design-crd" class="section level2">
+<h2>Completely Randomized Design (CRD)</h2>
+<ul>
+<li>CRD is best suited for experiments with a small number of
+treatments</li>
+<li>It is used when experimental units are essentially homogeneous</li>
+<li>CRD is generally applicable to the lab experimental conditions</li>
+<li>Because of homogeneity requirement, it may be difficult to use this
+design for field experiments</li>
+<li>Principles of replication and randomization apply but not
+“localcontrol”</li>
+</ul>
+<div id="example-and-layout-of-crd" class="section level3">
+<h3>Example and layout of CRD</h3>
+<p>A laboratory experiment was carried out to compare the dry matter
+content of four cassava varieties (V1, V2, V3, and V4 ). A completely
+randomised design was used, each variety being assigned to five
+plates.</p>
+<p><img src="images/image5.PNG" /></p>
+<p>A typical layout of 20 experimental units, 4 treatments with 5
+replicates as CRD</p>
+</div>
+<div id="statistical-model-crd" class="section level3">
+<h3>Statistical Model CRD</h3>
+<p><img src="images/image6.PNG" /></p>
+</div>
+<div id="a-skeleton-of-anova-table" class="section level3">
+<h3>A skeleton of ANOVA Table</h3>
+<p><img src="images/image7.PNG" /></p>
+</div>
+</div>
+<div id="randomized-complete-block-design-rcbd" class="section level2">
+<h2>Randomized Complete Block Design (RCBD)</h2>
+<ul>
+<li>Probably the most used experimental design in agricultural field
+trial</li>
+<li>Each treatment replicated once in each block (balanced and
+complete)</li>
+<li>The block of experimental units should be as uniform as
+possible</li>
+<li>The randomization process for RCBD is applied separately to each
+block (Gomez and Gomez, 1984)</li>
+<li>The design is based on three principles of experimental design</li>
+</ul>
+<div id="example-and-layout-of-rcbd" class="section level3">
+<h3>Example and layout of RCBD</h3>
+<p>A field experiment was carried out to evaluate and compare yield
+performances of four new varieties of cassava (B, C, D and E) with a
+standard check variety A. The trial was laid out in 3 randomized
+blocks.</p>
+<p><img src="images/image8.PNG" /></p>
+<p>A typical field layout of 15 plots, 5 treatments with 3 replicates as
+RCBD</p>
+</div>
+<div id="statistical-model-rcbd" class="section level3">
+<h3>Statistical Model RCBD</h3>
+<p><img src="images/image9.PNG" /></p>
+</div>
+<div id="a-skeleton-of-anova-table-1" class="section level3">
+<h3>A skeleton of ANOVA Table</h3>
+<p><img src="images/image10.PNG" /></p>
+</div>
+</div>
+<div id="latin-square-design-ld" class="section level2">
+<h2>Latin Square Design (LD)</h2>
+<ul>
+<li>Useful for controlling variation in two different directions</li>
+<li>Treatments are assigned at random within rows and columns, with each
+treatment occurs only once in each row and in each column</li>
+<li>There are equal number of rows, columns, and treatment</li>
+<li>Total number of plots required is the squared of number of
+treatment</li>
+</ul>
+<div id="example-and-layout-of-ld" class="section level3">
+<h3>Example and layout of LD</h3>
+<p>An experiment was designed to test the effects of five rates of
+nitrogen fertilizer (N1, N2, N3, N4 and N5) on the yield of potato tuber
+dry matter. The trial was laid out in the field as a 5 x 5 Latin
+square.</p>
+<p><img src="images/image11.PNG" /></p>
+<p>A typical field layout of 25 plots, 5 treatments with 5 replicates as
+LD</p>
+</div>
+<div id="statistical-model-latin-square-design" class="section level3">
+<h3>Statistical Model Latin Square Design</h3>
+<p><img src="images/image12.PNG" /></p>
+</div>
+<div id="a-skeleton-of-anova-table-2" class="section level3">
+<h3>A skeleton of ANOVA Table</h3>
+<p><img src="images/image13.PNG" /></p>
+</div>
+</div>
+<div id="split-plot-design-spd" class="section level2">
+<h2>Split plot design (SPD)</h2>
+<ul>
+<li>Design developed by Ronald Fisher (1925)</li>
+<li>It is a factorial design with restricted randomization of the
+treatment combinations within each block</li>
+<li>Randomization is a two-stage process</li>
+<li>The are two random errors</li>
+<li>main-plot factor error</li>
+<li>sub-plot factor error</li>
+</ul>
+<div id="example-and-layout-of-spd" class="section level3">
+<h3>Example and layout of SPD</h3>
+<p>An experiment was implemented to find the effect of spraying
+pesticide (A1, A2, and A3) to control cassava green mite pest on the
+yield of four varieties of cassava (V1, V2, V3, and V4) . The field
+design was a split plot in three randomized blocks (replicates)</p>
+<p><img src="images/image14.PNG" /></p>
+<p>A field layout of 9 main plots, 3 pesticides and four varieties
+treatments with 3 replicates as SPD</p>
+</div>
+<div id="statistical-model-split-plot-design" class="section level3">
+<h3>Statistical model Split plot Design</h3>
+<p><img src="images/image15.PNG" /></p>
+</div>
+<div id="a-skeleton-of-anova-table-3" class="section level3">
+<h3>A skeleton of ANOVA Table</h3>
+<p><img src="images/image16.PNG" /></p>
+</div>
+</div>
+<div id="factorial-experiment" class="section level2">
+<h2>Factorial experiment</h2>
+<ul>
+<li>It is a factorial design where two or more factors are investigated
+simultaneously</li>
+<li>Allows to investigate:</li>
+<li>Main effects</li>
+<li>Interaction effects</li>
+</ul>
+<div id="example-and-layout-of-factorial-experiment"
+class="section level3">
+<h3>Example and layout of factorial experiment</h3>
+<p>A study is to investigate the response of one variety to three levels
+of a new plant growth regulator (PGR) denoted by P1, P2, P3 and five
+levels of nitrogen fertilizer (N1, N2, N3, and N4). This is a 3 x 4
+factorial experiment. A randomized block design with three replicates
+was adopted and the treatment combination were randomly assigned to the
+plots within each block.</p>
+<p><img src="images/image17.PNG" /></p>
+<p>A typical layout of factorial experiment</p>
+</div>
+<div id="statistical-model-factorial-experiment" class="section level3">
+<h3>Statistical model Factorial experiment</h3>
+<p><img src="images/image18.PNG" /></p>
+</div>
+<div id="a-skeleton-of-anova-table-4" class="section level3">
+<h3>A skeleton of ANOVA Table</h3>
+<p><img src="images/image19.PNG" /></p>
+</div>
+</div>
+<div id="incomplete-block-design" class="section level2">
+<h2>Incomplete block design</h2>
+<ul>
+<li>An appropriate design for evaluating large number of treatment</li>
+<li>Useful when heterogeneity is great within block</li>
+<li>It gives greater precision than RCBD</li>
+<li>An incomplete-block design is resolvable - the blocks are grouped
+into larger blocks and the large blocks form a complete-block
+design</li>
+</ul>
+<div id="incomplete-block-design-contd" class="section level3">
+<h3>Incomplete block design (cont’d)</h3>
+<p><img src="images/image20.PNG" /></p>
+<p>A typical field layout of incomplete block design</p>
+<p>Parameters/notations used in IBD - t = Number of treatments - k =
+Number of units per block (block size) - b = total number of blocks in
+an experiment = s*r - r = Number of replicates of each treatment - s =
+Number of blocks in each complete replicate</p>
+</div>
+</div>
+<div id="type-of-lattice-design" class="section level2">
+<h2>Type of Lattice Design</h2>
+<div id="square-lattice-design" class="section level3">
+<h3>Square Lattice design</h3>
+<ul>
+<li>For this design, number of treatments must be perfect square</li>
+<li>t = k2 e.g. 25, 36, 49, 81, 100, etc</li>
+<li>The block size (k) is the square root of the number of treatments (k
+= t½ )</li>
+<li>Number of blocks in each replicate = number of units per block (s=
+k)</li>
+<li>The number of replication (r) is one more than the block size (r = k
++ 1)</li>
+<li>The restriction on the number of treatment and block design has been
+overcome by the introduction of alpha lattice</li>
+</ul>
+</div>
+<div id="type-of-lattice-design-contd" class="section level3">
+<h3>Type of Lattice Design (cont’d)</h3>
+<div id="rectangular-lattice-design" class="section level4">
+<h4>Rectangular Lattice design</h4>
+<ul>
+<li>The number of treatments is t = s*(s-1) and k = s – 1</li>
+<li>Example: 5 x 6 lattice has 5 plots per block, 6 blocks per
+replicate, and 30 treatments</li>
+</ul>
+</div>
+<div id="alpha-lattice" class="section level4">
+<h4>Alpha lattice</h4>
+<ul>
+<li>The number of treatments is t = s*k</li>
+<li>Flexible in a choice of s and k</li>
+<li>The only restriction is that block size must be a factor of number
+of treatment</li>
+</ul>
+</div>
+</div>
+<div id="example-and-layout-of-alpha-lattice-design"
+class="section level3">
+<h3>Example and layout of Alpha-Lattice Design</h3>
+<p>A field experiment was carried out to evaluate and compare yield
+performances of 24 varieties of cassava (V1, V2, …, V24). The trial was
+laid out in four randomized incomplete blocks in two larger blocks</p>
+<p><img src="images/image21.PNG" /></p>
+<p>A field layout of 4 block per replicates, block size of 6, and 24
+varieties with 2 replicates as Alpha lattice design</p>
+</div>
+<div id="statistical-model-alpha-lattice-design" class="section level3">
+<h3>Statistical model Alpha lattice Design</h3>
+<p><img src="images/image22.PNG" /></p>
+</div>
+<div id="a-skeleton-of-anova-table-5" class="section level3">
+<h3>A skeleton of ANOVA Table</h3>
+<p><img src="images/image23.PNG" /></p>
+</div>
+</div>
+<div id="augmented-block-design" class="section level2">
+<h2>Augmented Block Design</h2>
+<p><img src="images/image24.PNG" /></p>
+<p>A Field layout of 36 plots, 27 treatment with 3 replicates of checks
+as augmented design</p>
+<ul>
+<li>A field design proposed by Federer (1956)</li>
+<li>It is commonly used in early stage of breeding program</li>
+<li>It has both replicated (checks) and unreplicated treatments</li>
+<li>It presumed checks as fixed effect and new entries as random
+effect</li>
+<li>Replicated treatments are tested in each block as in a RCBD</li>
+<li>Each block has a different set of unreplicated treatments</li>
+<li>Checks are used to control spatial variability</li>
+</ul>
+<div id="statistical-model-augmented-block-design"
+class="section level3">
+<h3>Statistical Model Augmented Block Design</h3>
+<p><img src="images/image25.PNG" /></p>
+</div>
+<div id="a-skeleton-of-anova-table-6" class="section level3">
+<h3>A skeleton of ANOVA Table</h3>
+<p><img src="images/image26.PNG" /></p>
+</div>
+</div>
+</div>
+<div id="take-home-message" class="section level1">
+<h1>Take home message</h1>
+<ul>
+<li>Research Objectives have to be clearly stated</li>
+<li>A population to be studied must be clearly defined</li>
+<li>Use appropriate sampling technique to get the sample</li>
+<li>Understand your experimental unit and treatment structure</li>
+<li>Good principles of experimental design must be your watch word</li>
+<li>Summary statistics is necessary prior to formal analysis</li>
+<li>Use appropriate statistical technique in line with your research
+objective</li>
+</ul>
+</div>
 
 
 <!-- Adjust MathJax settings so that all math formulae are shown using
