@@ -1,0 +1,17 @@
+---
+title: "Experimental Design"
+site: workflowr::wflow_site
+output:
+  workflowr::wflow_html:
+    toc: false
+editor_options:
+  chunk_output_type: console
+---
+
+Experimental Design Workshop Bakare to Cassava Next Gen
+
+- Experimental Designs
+  - Completely Randomized Design (CRD)
+  - Randomized Complete Block Design (RCBD)
+  - Factorial Design
+  - Split Plot Design (SPD)
