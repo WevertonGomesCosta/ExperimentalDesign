@@ -8,4 +8,304 @@ editor_options:
   chunk_output_type: console
 ---
 
-Welcome to my research website.
+Experimental Design Workshop Bakare to Cassava Next Gen
+
+# Introduction to basic experimental design in plant breeding
+
+## Outline
+
+-   Basic ideas
+-   Definition of basic concepts
+-   Principles of good experimental design
+-   Field experimental design
+
+## Basic ideas
+-   What is the research question?
+-   What are the sources of variation?
+-   How many treatments are to be studied?
+-   What are the experimental units?
+-   How does the researcher assign the treatments to the available
+experimental units?
+-   How does the researcher observe the responses?
+-   Can the resulting design be analyzed or can the desired comparisons be
+made?
+
+## Definition of basic terms
+-   Experiment - an investigation in which a researcher applies some treatments to experimental units and then observes its effect by measuring one or more response variables
+-   Treatment – a condition or set of conditions applied to experimental unit in an experiment whose effect is to be studied
+  -   Variety
+  -   Different dosage of fertilizer
+  
+## Basic terms (cont’d)
+-    Experimental Unit – the physical entity to which a treatment is randomly assigned and independently applied
+  -   Field plot
+  -   Pot in greenhouse
+-   Layout – the physical arrangement of experimental units in space
+-   Block - group of homogeneous experimental unit
+-   Sampling Unit – Part of experimental unit that is measured
+-   Response variable – a measurable characteristic of an experimental unit that assesses the effect of treatment
+
+![](images/image1.png)
+
+[Reference](https://www.researchgate.net/profile/Urs-Schmidhalter-2)
+
+-   Explanatory variable - a variable that can be used to explain variation in a response variable
+-   Factor – is an explanatory variable under the control of the researcher
+-   Levels - are the different manifestation of a factor to be included in an experiment
+-   Fixed factor - A factor is fixed if the levels under consideration are the only ones of interest
+-    Random factor – A factor is random if the levels under consideration may be regarded as a sample from a larger population
+-    Nested factor – A factor B is considered to be nested within A if each level of B occurs with only one level of Factor A. Denoted as B(A) e.g., block(loc)
+
+![](images/image2.png)
+
+-    Crossed factor – Factor A and B are considered crossed if every levels of B occurs with every level of A. Denoted as A*B. e.g., G*L.
+
+-   Experimental error – Variation among experimental units that are treated alike
+
+![](images/image3.png)
+
+# Experimental Design in plant breeding
+
+## What is experimental design?
+-   Experimental Design – The study of strategies for efficient plans for the collection of data, which lead to proper estimates of parameters relevant to the researcher’s objective (Lentner and Bishop, 1993)
+  -   Design structure – grouping of homogeneous plots into blocks
+  -   Treatment structure - the set of treatments or treatment combination the researcher has selected to study and/or compare
+-   Experimental designs are divided into two categories:
+  -   Complete block design (blocks are complete)
+    -   CRD, RCBD, LD, SPD
+  -   Incomplete block design (blocks are incomplete)
+    -   Augmented design, lattice design
+
+## Guiding principle to choose an experimental
+design
+Choice of an appropriate experimental design depends 
+-   Which is simpler in terms of layout and analysis 
+-   Which design adequately control variability or uniformity of experimental units
+-   Purpose of the study
+-   The number of entries being evaluated
+-   Availability of seeds or planting material for replication
+
+## Principle of experimental design
+3 principles of ED are: Replication, blocking, and randomization
+
+![](images/image4.png)
+
+Replication – Repeating a treatment more than once in an experiment.
+The reasons for replication are:
+  -   Understand the variability in the experiment
+  -   Provide an estimate of experimental error
+  -   Estimate the difference between mean effects of different treatments
+  -   To improve the precision of the experiment by reducing standard error
+
+## Principle of experimental design (cont’d)
+Blocking – Process of partitioning experimental units into homogeneous groups such that
+  -   Intrablock plot variability minimized
+  -   Interbocks plot variation maximized
+Why blocking?
+  -   Removes extraneous variation from data
+  -   Serves as an error control strategy
+  -   Enhances precision in inferential data analysis
+
+"Block what you can and randomize what you cannot." Box, Hunter and Hunter 1978
+
+Randomization – Assignment of treatments to experimental units so that all units have an equal chance of receiving a treatment
+Why randomization?
+  -   It helps to assure unbiased estimates of treatment means and experimental error
+  -   Statistical estimation and tests of hypotheses on effects are theoretically valid
+
+## Completely Randomized Design (CRD)
+-   CRD is best suited for experiments with a small number of treatments
+-   It is used when experimental units are essentially homogeneous
+-   CRD is generally applicable to the lab experimental conditions
+-   Because of homogeneity requirement, it may be difficult to use this design for field experiments
+-   Principles of replication and randomization apply but not “localcontrol”
+
+### Example and layout of CRD
+A laboratory experiment was carried out to compare the dry matter content of four cassava varieties (V1, V2, V3, and V4 ). A completely randomised design was used, each variety being assigned to five plates.
+
+![](images/image5.png)
+
+A typical layout of 20 experimental units, 4 treatments with 5 replicates as CRD
+
+### Statistical Model CRD
+
+![](images/image6.png)
+
+### A skeleton of ANOVA Table
+
+![](images/image7.png)
+
+## Randomized Complete Block Design (RCBD)
+-   Probably the most used experimental design in agricultural field trial
+-   Each treatment replicated once in each block (balanced and complete)
+-   The block of experimental units should be as uniform as possible
+-   The randomization process for RCBD is applied separately to each block (Gomez and Gomez, 1984)
+-   The design is based on three principles of experimental design
+
+### Example and layout of RCBD
+A field experiment was carried out to evaluate and compare yield performances of four new varieties of cassava (B, C, D and E) with a standard check variety A. The trial was laid out in 3 randomized blocks.
+
+![](images/image8.png)
+
+A typical field layout of 15 plots, 5 treatments with 3 replicates as RCBD
+
+### Statistical Model RCBD
+
+![](images/image9.png)
+
+### A skeleton of ANOVA Table
+
+![](images/image10.png)
+
+## Latin Square Design (LD)
+-   Useful for controlling variation in two different directions
+-   Treatments are assigned at random within rows and columns, with each treatment occurs only once in each row and in each column
+-   There are equal number of rows, columns, and treatment
+-   Total number of plots required is the squared of number of treatment
+
+### Example and layout of LD
+An experiment was designed to test the effects of five rates of nitrogen fertilizer (N1, N2, N3, N4 and N5) on the yield of potato tuber dry matter.
+The trial was laid out in the field as a 5 x 5 Latin square.
+
+![](images/image11.png)
+
+A typical field layout of 25 plots, 5 treatments with 5 replicates as LD
+
+### Statistical Model Latin Square Design
+
+![](images/image12.png)
+
+### A skeleton of ANOVA Table
+
+![](images/image13.png)
+
+## Split plot design (SPD)
+-   Design developed by Ronald Fisher (1925)
+-   It is a factorial design with restricted randomization of the treatment combinations within each block
+-   Randomization is a two-stage process
+-   The are two random errors
+  -   main-plot factor error
+  -   sub-plot factor error
+
+### Example and layout of SPD
+An experiment was implemented to find the effect of spraying pesticide (A1, A2, and A3) to control cassava green mite pest on the yield of four varieties of cassava (V1, V2, V3, and V4) . The field design was a split plot in three randomized blocks (replicates)
+
+![](images/image14.png)
+
+A field layout of 9 main plots, 3 pesticides and four varieties treatments with 3 replicates as SPD
+
+### Statistical model Split plot Design
+
+![](images/image15.png)
+
+### A skeleton of ANOVA Table
+
+![](images/image16.png)
+
+## Factorial experiment
+-   It is a factorial design where two or more factors are investigated simultaneously
+-   Allows to investigate:
+  -   Main effects
+  -   Interaction effects
+
+### Example and layout of factorial experiment
+A study is to investigate the response of one variety to three levels of a new plant growth regulator (PGR) denoted by P1, P2, P3 and five levels of nitrogen fertilizer (N1, N2, N3, and N4). This is a 3 x 4 factorial experiment. A randomized block design with three replicates was adopted and the treatment combination were randomly assigned to the plots within each block.
+
+![](images/image17.png)
+
+A typical layout of factorial experiment
+
+### Statistical model Factorial experiment
+
+![](images/image18.png)
+
+### A skeleton of ANOVA Table
+
+![](images/image19.png)
+
+## Incomplete block design
+-   An appropriate design for evaluating large number of treatment
+-   Useful when heterogeneity is great within block
+-   It gives greater precision than RCBD
+-   An incomplete-block design is resolvable - the blocks are grouped into larger blocks and the large blocks form a complete-block design
+
+### Incomplete block design (cont’d)
+
+![](images/image20.png)
+
+A typical field layout of incomplete block design
+
+Parameters/notations used in IBD
+-   t = Number of treatments
+-   k = Number of units per block (block size)
+-   b = total number of blocks in an experiment = s*r
+-   r = Number of replicates of each treatment
+-   s = Number of blocks in each complete replicate
+
+## Type of Lattice Design
+
+### Square Lattice design
+-   For this design, number of treatments must be perfect square
+-   t = k2 e.g. 25, 36, 49, 81, 100, etc
+-   The block size (k) is the square root of the number of treatments (k = t½ )
+-   Number of blocks in each replicate = number of units per block (s= k)
+-   The number of replication (r) is one more than the block size (r = k + 1)
+-   The restriction on the number of treatment and block design has been overcome by the introduction of alpha lattice
+
+### Type of Lattice Design (cont’d)
+#### Rectangular Lattice design
+-   The number of treatments is t = s*(s-1) and k = s – 1
+-   Example: 5 x 6 lattice has 5 plots per block, 6 blocks per replicate, and 30 treatments
+
+#### Alpha lattice
+-   The number of treatments is t = s*k
+-   Flexible in a choice of s and k
+-   The only restriction is that block size must be a factor of number of treatment
+
+### Example and layout of Alpha-Lattice Design
+A field experiment was carried out to evaluate and compare yield performances of 24 varieties of cassava (V1, V2, …, V24). The trial was laid out in four randomized incomplete blocks in two larger
+blocks
+
+![](images/image21.png)
+
+A field layout of 4 block per replicates, block size of 6, and 24 varieties with 2 replicates as Alpha lattice design
+
+### Statistical model Alpha lattice Design
+
+![](images/image22.png)
+
+### A skeleton of ANOVA Table
+
+![](images/image23.png)
+
+## Augmented Block Design
+
+![](images/image24.png)
+
+A Field layout of 36 plots, 27 treatment with 3 replicates of checks as augmented design
+
+-   A field design proposed by Federer (1956)
+-   It is commonly used in early stage of breeding program
+-   It has both replicated (checks) and unreplicated treatments
+-   It presumed checks as fixed effect and new entries as random effect
+-   Replicated treatments are tested in each block as in a RCBD
+-   Each block has a different set of unreplicated treatments
+-   Checks are used to control spatial variability
+
+### Statistical Model Augmented Block Design
+
+![](images/image25.png)
+
+### A skeleton of ANOVA Table
+
+![](images/image26.png)
+
+# Take home message
+
+-   Research Objectives have to be clearly stated
+-   A population to be studied must be clearly defined
+-   Use appropriate sampling technique to get the sample
+-   Understand your experimental unit and treatment structure
+-   Good principles of experimental design must be your watch word
+-   Summary statistics is necessary prior to formal analysis
+-   Use appropriate statistical technique in line with your research objective
